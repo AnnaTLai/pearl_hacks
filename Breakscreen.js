@@ -9,13 +9,18 @@ export default function Breakscreen({ navigation }) {
       <Text style={styles.text}> Welcome to the chill page </Text>
       <Text style={styles.text}> Good job staying focused for so long! </Text>
       <Text style={styles.text}>Very proud of you.</Text>
-
+      ...
       <Button
         onPress={() => navigation.goBack()}
         color="#457fad"
+        title="Go back to the Timer"
+      />
+      ...
+      <Button
+        onPress={() => navigation.navigate("Mainscreen")}
+        color="#457fad"
         title="Go back to Mainscreen"
       />
-
       <StatusBar style="auto" />
     </View>
   );
