@@ -3,22 +3,17 @@ import React from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
 
 // This is the home Screen that will show one button
-export default function Timescreen({ navigation }) {
+export default function Breakscreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}> Time 20 minuets from now! </Text>
-      <Text style={styles.text2}> You need a break from work :D </Text>
+      <Text style={styles.text}> Welcome to the chill page </Text>
+      <Text style={styles.text}> Good job staying focused for so long! </Text>
+      <Text style={styles.text}>Very proud of you.</Text>
 
       <Button
         onPress={() => navigation.goBack()}
         color="#457fad"
         title="Go back to Mainscreen"
-      />
-
-      <Button
-        onPress={() => navigation.navigate('Breakscreen')}
-        color="#457fad"
-        title="Time's  up!"
       />
 
       <StatusBar style="auto" />
@@ -36,11 +31,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     fontWeight: "bold",
-    color:"white"
+    color: "white",
   },
-  text2: {
-    fontSize: 14,
-    color:"white"
-  }
-
 });

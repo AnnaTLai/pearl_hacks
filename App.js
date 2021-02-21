@@ -3,6 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Mainscreen from "./Mainscreen";
 import Timescreen from "./Timescreen";
+import Breakcreen from "./Breakscreen";
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Mainscreen" component={Mainscreen} />
         <Stack.Screen name="Timescreen" component={Timescreen} />
+        <Stack.Screen name="Breakscreen" component={Breakcreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -13,7 +13,8 @@ export default function Mainscreen({ navigation }) {
       <Text style= {styles.heading}>Oh, Odoro</Text>
       <Button
         onPress={() => navigation.navigate('Timescreen')}
-        title="Timescreen"
+        color="#457fad"
+        title="Get started"
       />
       <StatusBar style="auto" />
     </View>
