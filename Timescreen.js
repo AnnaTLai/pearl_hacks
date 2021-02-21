@@ -14,6 +14,7 @@ export default function Timescreen({ navigation }) {
   const [isTimerStart, setIsTimerStart] = useState(false);
   const [timerDuration, setTimerDuration] = useState(5000); // 20 min is 1200000
   const [resetTimer, setResetTimer] = useState(false);
+  // code with reference to https://github.com/fractaltech/react-native-timer/blob/master/package.json
 
   return (
     <View style={styles.container}>
